@@ -1,4 +1,4 @@
-﻿export type StorefrontProduct = {
+export type StorefrontProduct = {
   id: string;
   title: string;
   handle: string;
@@ -17,7 +17,7 @@ const mockProducts: StorefrontProduct[] = [
     id: "mock-1",
     title: "เสื้อ Platinum Tee",
     handle: "platinum-tee",
-    description: "เสื้อทรงบ็อกซีพร้อมโลโก้ด้านหน้า ใส่ง่ายในทุกวันและจัดลุคได้ไม่ยาก",
+    description: "เสื้อทรงบ็อกซีที่ให้ลุคสะอาด คม และใส่ได้ง่ายในทุกวัน",
     category: "เสื้อ",
     colorway: "ดำคลาสสิก",
     price: "THB 1,490",
@@ -30,7 +30,7 @@ const mockProducts: StorefrontProduct[] = [
     id: "mock-2",
     title: "กางเกง Signal Pant",
     handle: "signal-pant",
-    description: "กางเกงทรงสบายที่เก็บเส้นขาให้คมขึ้น และดูพร้อมสำหรับภาพลุคหรือหน้าสินค้า",
+    description: "กางเกงทรงสบายที่ปรับเส้นขาให้ดูคมขึ้น พร้อมบาลานซ์ระหว่างแฟชั่นและการใช้งานจริง",
     category: "กางเกง",
     colorway: "เทากราไฟต์",
     price: "THB 2,490",
@@ -43,7 +43,7 @@ const mockProducts: StorefrontProduct[] = [
     id: "mock-3",
     title: "ลุคแคมเปญหลัก",
     handle: "campaign-look",
-    description: "ภาพลุคหลักจากชุดภาพที่คุณให้มา ใช้เป็นตัวตั้งอารมณ์ของคอลเลกชันนี้",
+    description: "ลุคเด่นของซีซันที่สะท้อนอารมณ์ metallic และสัดส่วนแบบ Platinum ได้ชัดที่สุด",
     category: "ไฮไลต์",
     colorway: "Platinum edit",
     price: "THB 3,290",
@@ -105,7 +105,7 @@ function toStorefrontProduct(
     description:
       product.description ||
       product.subtitle ||
-      "รายละเอียดสินค้าที่ดึงจากแคตตาล็อกและพร้อมนำไปแสดงบนหน้าร้าน",
+      "รายละเอียดสินค้าที่คัดมาเพื่อสะท้อนมู้ดของคอลเลกชันนี้",
     category: product.type?.value || "คอลเลกชัน",
     colorway: `Edition ${String(index + 1).padStart(2, "0")}`,
     price:

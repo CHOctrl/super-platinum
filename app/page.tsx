@@ -1,4 +1,4 @@
-﻿import { Hero } from "@/components/hero";
+import { Hero } from "@/components/hero";
 import { Navbar } from "@/components/navbar";
 import { ProductGrid } from "@/components/product-grid";
 import { fetchFeaturedProducts } from "@/lib/medusa";
@@ -14,11 +14,10 @@ export default async function HomePage() {
         <div className="section-heading">
           <p className="eyebrow">ดรอป 03 / วางขายแล้ว</p>
           <div>
-            <h2>ลุคแฟชั่นชัด แต่ยังพาคนซื้อได้ไว</h2>
+            <h2>ซิลูเอตคม วัสดุเด่น และลุคที่ใส่ได้จริง</h2>
             <p>
-              เป้าหมายตอนนี้คือทำให้ร้านชัดเจนขึ้น: มีเมนูนำทางที่ดีขึ้น
-              ใช้ภาพสินค้าจริงที่คุณให้มา และวางจุดซื้อให้พร้อมต่อยอดไปยัง
-              ตะกร้าและระบบชำระเงินจริงในขั้นถัดไป
+              คอลเลกชันล่าสุดของ Platinum รวมเสื้อผ้าและชิ้นเด่นที่ออกแบบมาให้
+              โดดเด่นตั้งแต่ภาพแรก แต่ยังสวมใส่ได้ทุกวันในจังหวะของเมือง
             </p>
           </div>
         </div>
@@ -26,12 +25,12 @@ export default async function HomePage() {
       </section>
       <section className="section" id="story">
         <div className="section-heading">
-          <p className="eyebrow">ทิศทางแบรนด์</p>
+          <p className="eyebrow">Platinum World</p>
           <div>
-            <h2>โครงสร้างคมขึ้น และพร้อมใช้งานขายจริงมากขึ้น</h2>
+            <h2>แรงบันดาลใจจาก Y2K ที่ถูกขัดให้เรียบและร่วมสมัย</h2>
             <p>
-              ภาพรวมยังคงคาแรกเตอร์ Y2K แบบ platinum อยู่ แต่ตอนนี้การจัดวาง
-              ทำงานเหมือนร้านค้าที่พร้อมขายจริงมากขึ้น
+              โทน metallic พื้นผิวมันวาว และเส้นสายที่เฉียบคม ถูกถ่ายทอดออกมา
+              ในรูปแบบที่โมเดิร์นขึ้น เพื่อให้แต่ละลุคดูชัดบนหน้าเว็บและชัดบนตัวคนใส่
             </p>
           </div>
         </div>

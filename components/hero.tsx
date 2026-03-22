@@ -1,29 +1,28 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 
 export function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero-card">
         <div className="hero-copy">
-          <p className="eyebrow">พร้อมขายในกรุงเทพ / platinum utility / 2026</p>
-          <h1>คมแบบ Y2K แต่ซื้อได้ง่ายกว่าเดิม</h1>
+          <p className="eyebrow">Bangkok / New Season / Platinum</p>
+          <h1>Platinum Drop 03</h1>
           <p>
-            งานดีไซน์นี้ยังคงอารมณ์ futurist แบบ platinum เอาไว้
-            แต่จัดให้เหมือนร้านจริงมากขึ้น: มี navbar ชัดเจน
-            มีปุ่มซื้อที่เข้าใจง่าย และใช้ภาพสินค้าที่ดูเป็นของแบรนด์เอง
+            นิยามใหม่ของลุค Y2K ผ่านงานตัดเย็บที่คมขึ้น สัดส่วนที่ชัดขึ้น
+            และภาพรวมที่ออกแบบมาเพื่อให้แต่ละชิ้นโดดเด่นทั้งบนหน้าเว็บและในชีวิตจริง
           </p>
           <div className="hero-cta">
             <a className="button-primary" href="#featured">
-              ช้อปคอลเลกชันนี้
+              เลือกซื้อคอลเลกชัน
             </a>
             <a className="button-secondary" href="#story">
-              ดูคอนเซปต์
+              สำรวจแรงบันดาลใจ
             </a>
           </div>
           <div className="hero-meta">
-            <span>รองรับงานอีคอมเมิร์ซจริง</span>
-            <span>พร้อมต่อยอดปุ่มใส่ตะกร้า</span>
-            <span>พร้อมเชื่อม Shopify</span>
+            <span>New season essentials</span>
+            <span>Statement silhouettes</span>
+            <span>Bangkok ready</span>
           </div>
         </div>
         <div className="hero-side">
@@ -35,12 +34,12 @@ export function Hero() {
               priority
               sizes="(max-width: 1100px) 100vw, 40vw"
             />
-            <span className="orbital-label">ภาพจากลูกค้า / hero lockup</span>
+            <span className="orbital-label">Drop 03 / Featured Look</span>
           </div>
           <div className="stat-row">
-            <span>01 ภาพหลักของหน้าแรก</span>
-            <span>03 การ์ดสินค้า</span>
-            <span>ทิศทางสำหรับตลาดไทย</span>
+            <span>Platinum signature</span>
+            <span>03 featured styles</span>
+            <span>Designed for now</span>
           </div>
         </div>
       </div>
