@@ -1,0 +1,9 @@
+backend
+medusa
+picture
+Dockerfile
+docker-compose.yml
+.env
+.env.local
+.next
+node_modules
