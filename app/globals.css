@@ -245,6 +245,7 @@ a {
 .button-secondary {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.04);
+  color: #f5f7fb;
 }
 
 .button-secondary--small {
@@ -695,4 +696,12 @@ a {
 
 .cart-remove {
   padding: 8px 12px;
+}
+.cart-drawer__footer {
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.cart-checkout {
+  width: 100%;
 }

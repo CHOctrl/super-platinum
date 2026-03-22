@@ -77,6 +77,11 @@ function CartDrawer({
             ))
           )}
         </div>
+        <div className="cart-drawer__footer">
+          <button className="button-primary cart-checkout" type="button">
+            Checkout
+          </button>
+        </div>
       </aside>
     </>
   );
