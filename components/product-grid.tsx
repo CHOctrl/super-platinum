@@ -1,4 +1,7 @@
-﻿import Image from "next/image";
+"use client";
+
+import Image from "next/image";
+import { useCart } from "@/components/cart-provider";
 import type { StorefrontProduct } from "@/lib/medusa";
 
 type ProductGridProps = {
@@ -6,6 +9,8 @@ type ProductGridProps = {
 };
 
 export function ProductGrid({ products }: ProductGridProps) {
+  const { addItem } = useCart();
+
   return (
     <div className="product-grid" id="featured">
       {products.map((product) => (
@@ -33,9 +38,20 @@ export function ProductGrid({ products }: ProductGridProps) {
             </div>
             <p>{product.description}</p>
             <div className="product-actions">
-              <a className="button-secondary button-secondary--small" href="#featured">
+              <button
+                className="button-secondary button-secondary--small"
+                type="button"
+                onClick={() =>
+                  addItem({
+                    id: product.id,
+                    title: product.title,
+                    price: product.price,
+                    image: product.image?.src
+                  })
+                }
+              >
                 เพิ่มลงตะกร้า
-              </a>
+              </button>
               <a className="product-link" href="#story">
                 ดูรายละเอียด
               </a>

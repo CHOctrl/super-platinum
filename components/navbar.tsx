@@ -1,4 +1,10 @@
-﻿export function Navbar() {
+"use client";
+
+import { useCart } from "@/components/cart-provider";
+
+export function Navbar() {
+  const { itemCount, toggleCart } = useCart();
+
   return (
     <header className="site-header">
       <div className="site-header__inner">
@@ -11,12 +17,12 @@
           <a href="#story">เรื่องราว</a>
         </nav>
         <div className="site-actions">
-          <a className="site-badge" href="#featured">
-            ตะกร้าสินค้า
-          </a>
-          <a className="button-primary button-primary--nav" href="#featured">
-            ช้อปเลย
-          </a>
+          <button className="site-badge site-badge--button" type="button" onClick={toggleCart}>
+            ตะกร้า {itemCount}
+          </button>
+          <button className="button-primary button-primary--nav" type="button" onClick={toggleCart}>
+            ดูตะกร้า
+          </button>
         </div>
       </div>
     </header>

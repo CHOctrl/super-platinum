@@ -35,6 +35,9 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+      <footer className="site-credit">
+        <p>by PP design</p>
+      </footer>
     </main>
   );
 }
